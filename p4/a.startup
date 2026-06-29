@@ -1,0 +1,4 @@
+p4c /shared/transit.p4
+simple_switch -i 1@eth0 -i 2@eth1 -i 3@eth2 -i 4@eth3 transit.json &
+sleep 2
+simple_switch_CLI < /shared/commands_a.txt

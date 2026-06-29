@@ -1,0 +1,4 @@
+ip address add 20.0.1.100/24 dev eth0
+
+# Launch POX in background with our incast module
+cd /pox && nohup python3 pox.py log.level --INFO openflow.of_01 --port=6653 --address=20.0.1.100 incast > /tmp/pox.log 2>&1 &

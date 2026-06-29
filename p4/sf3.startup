@@ -1,0 +1,2 @@
+p4c /shared/reflector.p4
+simple_switch -i 1@eth0 reflector.json &
